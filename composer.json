@@ -1,0 +1,16 @@
+{
+    "name": "pedro/inforgeneses",
+    "descreption": "inforgeneses",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pedro Santiago",
+            "email": "joaopedrosantiago1103@gmail.com"
+        }
+    ],
+    "require": {}
+}
