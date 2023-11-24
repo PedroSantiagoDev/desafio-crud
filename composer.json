@@ -12,5 +12,10 @@
             "email": "joaopedrosantiago1103@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "filp/whoops": "^2.15"
+    },
+    "files": [
+        "app/helpers/constants.php"
+    ]
 }
