@@ -3,6 +3,7 @@
 namespace app\core;
 
 use app\interfaces\AppInterface;
+use Exception;
 
 class MyApp
 {
@@ -26,11 +27,11 @@ class MyApp
     {
         if ($_SERVER["REQUEST_METHOD"] === "GET") {
             if (!isset($this->controller->data)) {
-                throw new \Exception("A propriedade data é obrigatória");
+                throw new Exception("A propriedade data é obrigatória");
             }
 
             if (!array_key_exists("title", $this->controller->data)) {
-                throw new \Exception("A propriedade title é obrigatória");
+                throw new Exception("A propriedade title é obrigatória em data");
             }
 
             extract($this->controller->data);
