@@ -13,7 +13,8 @@
         }
     ],
     "require": {
-        "filp/whoops": "^2.15"
+        "filp/whoops": "^2.15",
+      "ext-pdo": "*"
     },
     "files": [
         "app/helpers/constants.php"
