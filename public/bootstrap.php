@@ -8,7 +8,6 @@ $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->allowQuit(false);
 $whoops->writeToOutput(false);
-$whoops->register();
 
 try {
     $myApp = new MyApp(new AppExtract());
@@ -18,4 +17,3 @@ try {
     $html = $whoops->handleException($e);
     echo $html;
 }
-
