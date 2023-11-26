@@ -9,7 +9,7 @@ class ControllerExtract
         $uri = Uri::uri();
         $controller = "Home";
 
-        if (isset($ri[0]) && $ri[0] !== "") {
+        if (isset($uri[0]) && $uri[0] !== "") {
             $controller = ucfirst($uri[0]);
         }
 
