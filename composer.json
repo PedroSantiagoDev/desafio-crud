@@ -4,7 +4,11 @@
     "autoload": {
         "psr-4": {
             "app\\": "app"
-        }
+        },
+        "files": [
+            "app/helpers/constants.php",
+            "app/helpers/redirect.php"
+        ]
     },
     "authors": [
         {
@@ -14,9 +18,6 @@
     ],
     "require": {
         "filp/whoops": "^2.15",
-      "ext-pdo": "*"
-    },
-    "files": [
-        "app/helpers/constants.php"
-    ]
+        "ext-pdo": "*"
+    }
 }
