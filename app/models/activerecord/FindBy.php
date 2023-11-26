@@ -2,7 +2,7 @@
 
 namespace app\models\activerecord;
 
-use app\database\connection\Connection;
+use app\models\connection\Connection;
 use app\interfaces\ActiveRecordExecuteInterface;
 use app\interfaces\ActiveRecordInterface;
 

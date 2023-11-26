@@ -2,9 +2,9 @@
 
 namespace app\models\activerecord;
 
-use app\database\connection\Connection;
 use app\interfaces\ActiveRecordExecuteInterface;
 use app\interfaces\ActiveRecordInterface;
+use app\models\connection\Connection;
 
 class Delete implements ActiveRecordExecuteInterface
 {

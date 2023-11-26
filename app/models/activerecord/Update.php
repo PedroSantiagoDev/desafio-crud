@@ -2,10 +2,9 @@
 
 namespace app\models\activerecord;
 
-use app\database\connection\Connection;
+use app\models\connection\Connection;
 use app\interfaces\ActiveRecordExecuteInterface;
-use app\interfaces\ActiveRecordInterface;
-use function app\helpers\formatException;
+use app\interfaces\ActiveRecordInterface;;
 
 class Update implements ActiveRecordExecuteInterface
 {
