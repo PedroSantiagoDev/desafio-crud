@@ -4,7 +4,7 @@ namespace app\models\activerecord;
 
 use app\models\connection\Connection;
 use app\interfaces\ActiveRecordExecuteInterface;
-use app\interfaces\ActiveRecordInterface;;
+use app\interfaces\ActiveRecordInterface;
 
 class Update implements ActiveRecordExecuteInterface
 {
@@ -23,7 +23,7 @@ class Update implements ActiveRecordExecuteInterface
             ]);
 
             $prepare = $connection->prepare($query);
-            $prepare->execute($activeRecordInterface->getAttributes());
+            $prepare->execute($attributes);
 
             return $prepare->rowCount();
         } catch (\Throwable $throw) {
