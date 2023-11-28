@@ -19,11 +19,9 @@ class Delete implements ActiveRecordExecuteInterface
             $query = $this->createQuery($activeRecordInterface);
             $connection = Connection::connect();
             $prepare = $connection->prepare($query);
-            $prepare->execute([
+            return $prepare->execute([
                 $this->field => $this->value
             ]);
-
-            return $prepare->rowCout();
         } catch (\Throwable $throw) {
             var_dump($throw->getMessage());
         }
@@ -32,7 +30,7 @@ class Delete implements ActiveRecordExecuteInterface
     private function createQuery(ActiveRecordInterface $activeRecordInterface)
     {
         if ($activeRecordInterface->getAttributes()) {
-            throw new \Exception("Par deletar não precisa passar atributos");
+            throw new \Exception("Para deletar não precisa passar atributos");
         }
         $sql = "delete from {$activeRecordInterface->getTable()}";
         $sql .= " where {$this->field} = :{$this->field}";
