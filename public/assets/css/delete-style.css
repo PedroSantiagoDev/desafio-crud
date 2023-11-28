@@ -1,0 +1,64 @@
+section {
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.deletetask {
+    background: var(--gray-500);
+    border: 0.1rem solid var(--gray-400);
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deletetask h2 {
+    margin-bottom: 0.5rem;
+    font-size: 4rem;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.deletetask h2 span {
+    color: var(--purple-dark);
+}
+
+.deletetask p {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    display: flex;
+    gap: 0.8rem;
+    color: var(--gray-200);
+}
+
+.deletetaskbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 0.8rem;
+}
+
+.deletetask a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+    color: var(--gray-100);
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: var(--blue-dark);
+    transition: background 0.2s;
+}
+
+.deletetask a:hover {
+    background: var(--blue);
+}
