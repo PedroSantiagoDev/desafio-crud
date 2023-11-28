@@ -5,7 +5,6 @@ namespace app\models\connection;
 
 use PDO;
 use PDOException;
-use function app\helpers\formatException;
 
 class Connection
 {
@@ -15,7 +14,7 @@ class Connection
     {
         try {
             if (!static::$pdo) {
-                static::$pdo = new PDO("mysql:host=localhost;dbname=task", "root", "D!h*$4u9", [
+                static::$pdo = new PDO("mysql:host=127.0.0.1;dbname=task", "root", "D!h*$4u9", [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
                 ]);
