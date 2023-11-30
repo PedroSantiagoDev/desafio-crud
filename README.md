@@ -12,8 +12,9 @@ CREATE TABLE task (
   description VARCHAR(255),
   PRIMARY KEY (id)
 );
-
-
+## Script
+- composer dump-autoload -o
+- composer require filp/whoops
 ## Pré-requisitos
 
 Antes de iniciar, você precisará ter o seguinte instalado em sua máquina:
