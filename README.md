@@ -6,7 +6,7 @@ Este é um projeto de exemplo para gerenciamento de tarefas. Antes de iniciar, c
 - CREATE DATABASE task;
 - USE task;
 
-CREATE TABLE task (
+CREATE TABLE tasks (
   id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(255),
   description VARCHAR(255),
