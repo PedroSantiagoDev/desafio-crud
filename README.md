@@ -12,6 +12,10 @@ CREATE TABLE tasks (
   description VARCHAR(255),
   PRIMARY KEY (id)
 );
+
+## Muda conexão
+caminho : app/models/connection/Connection.php
+
 ## Script
 - composer dump-autoload -o
 - composer require filp/whoops
